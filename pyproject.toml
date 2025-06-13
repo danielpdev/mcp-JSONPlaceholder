@@ -1,0 +1,13 @@
+[project]
+name = "jsonplaceholder-mcp-server"
+version = "0.1.0"
+description = "MCP Server for JSONPlaceholder API - A free public REST API for testing and prototyping"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.25.0",
+    "mcp>=1.9.4",
+]
+
+[project.scripts]
+jsonplaceholder-mcp-server = "server:main"
