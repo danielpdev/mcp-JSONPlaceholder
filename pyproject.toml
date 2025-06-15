@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "httpx>=0.25.0",
-    "mcp>=1.9.4",
+    "mcp[cli]>=1.9.4",
 ]
 
 [project.scripts]

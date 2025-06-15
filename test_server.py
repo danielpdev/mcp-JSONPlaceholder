@@ -12,25 +12,21 @@ async def test_api_endpoints():
     """Test basic API endpoints to ensure they're working."""
     
     async with httpx.AsyncClient() as client:
-        # Test getting posts
         print("Testing /posts endpoint...")
         response = await client.get(f"{BASE_URL}/posts")
         posts = response.json()
         print(f"✓ Retrieved {len(posts)} posts")
         
-        # Test getting a specific post
         print("\nTesting /posts/1 endpoint...")
         response = await client.get(f"{BASE_URL}/posts/1")
         post = response.json()
         print(f"✓ Retrieved post: {post['title']}")
         
-        # Test getting users
         print("\nTesting /users endpoint...")
         response = await client.get(f"{BASE_URL}/users")
         users = response.json()
         print(f"✓ Retrieved {len(users)} users")
         
-        # Test creating a post
         print("\nTesting POST /posts endpoint...")
         post_data = {
             "title": "Test Post",
