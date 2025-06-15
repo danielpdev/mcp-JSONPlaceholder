@@ -26,6 +26,18 @@ This MCP server provides **Resources**, **Tools**, and **Prompts** for interacti
 - **analyze_post** - Generate analysis prompt for a specific post
 - **user_profile_summary** - Create comprehensive user profile analysis
 
+
+### How to add it to cursor:
+```bash {
+  "mcpServers": {
+    "jsonplaceholder": {
+      "command": "/Users/danielpopa/Projects/work/mcp-server/cursor_runner.sh",
+      "args": []
+    }
+  }
+} 
+```
+
 ### Prerequisites
 - Python 3.10+
 - [uv](https://docs.astral.sh/uv/) package manager
